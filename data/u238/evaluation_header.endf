@@ -1,0 +1,864 @@
+ 9.223800+4 2.360058+2          1          1          0          59237 1451     
+ 0.000000+0 1.000000+0          0          0          0          69237 1451     
+ 1.000000+0 3.000000+7          1          0         10          79237 1451     
+ 0.000000+0 0.000000+0          0          0        734        1269237 1451     
+ 92-U -238 ORNL,LANL+ EVAL-SEP06 Young,Chadwick,Derrien,Courcelle 9237 1451     
+                      DIST-DEC06 REV2-                 20111222   9237 1451     
+----ENDF/B-VII.1      MATERIAL 9237         REVISION 2            9237 1451     
+-----INCIDENT NEUTRON DATA                                        9237 1451     
+------ENDF-6 FORMAT                                               9237 1451     
+***************************************************************** 9237 1451     
+12/09/2010  S.T. Holloway on behalf of LANL                       9237 1451     
+  Reverted MF=1/5, MT=455 Delayed-neutron 6-grp data to           9237 1451     
+  ENDF/B-VI.8 values.                                             9237 1451     
+***************************************************************** 9237 1451     
+                                                                  9237 1451     
+                    ENDF/B-VII EVALUATION                         9237 1451     
+                                                                  9237 1451     
+P.G.Young, M.B.Chadwick, R.E.MacFarlane, W.B.Wilson, D.G.Madland, 9237 1451     
+                P.Talou, T. Kawano (LANL)                         9237 1451     
+                          and                                     9237 1451     
+   H. Derrien, A. Courcelle, L. C. Leal, N. Larson (ORNL)         9237 1451     
+                                                                  9237 1451     
+                ----- SUMMARY -----                               9237 1451     
+                                                                  9237 1451     
+   The ENDF/B-VII evaluation is a complete revision of almost all 9237 1451     
+the data in the 238U evaluation. Major features of the evaluation 9237 1451     
+are:                                                              9237 1451     
+1. A new evaluation of the (n,f) cross section based on the       9237 1451     
+   ENDF/B-VII standard cross section analysis is incorporated.    9237 1451     
+2. New resolved resonance parameter data are incorporated.        9237 1451     
+3. A new analysis of the prompt fission neutron spectrum matrix   9237 1451     
+   based on the Los Alamos model is used to calculate neutron     9237 1451     
+   spectra at all incident energies.                              9237 1451     
+4. Improved delayed neutron data are incorporated.                9237 1451     
+5. A new theoretical analysis utilizing coupled-channels optical  9237 1451     
+   model and reaction theory calculations was performed and used  9237 1451     
+   with experimental data to provide new scattering cross         9237 1451     
+   sections and angular distributions.                            9237 1451     
+6. The reaction theory calculations are utilized for (n,xn) and   9237 1451     
+   other reactions.                                               9237 1451     
+7. New calculations with coupled-channels optical model           9237 1451     
+   parameters are used to extend direct reaction cross sections   9237 1451     
+   and angular distributions to an excitation energy of 3.9 MeV.  9237 1451     
+8. Improved fission energy release values are incorporated.       9237 1451     
+9. A covariance evaluation was performed in the resolved energy   9237 1451     
+   region (1.0-5 eV to 20.0 keV) at ORNL and above 20.0 keV at    9237 1451     
+   LANL.                                                          9237 1451     
+                                                                  9237 1451     
+             ----- DETAILED DESCRIPTION -----                     9237 1451     
+                                                                  9237 1451     
+>> MF=1 GENERAL INFORMATION                                       9237 1451     
+                                                                  9237 1451     
+MT=452: TOTAL AVERAGE NEUTRON MULTIPLICITY PER FISSION (TOTAL     9237 1451     
+        NUBAR)                                                    9237 1451     
+   Sum of MT=455 and 456.                                         9237 1451     
+                                                                  9237 1451     
+MT=455: AVERAGE DELAYED NEUTRON MULTIPLICITY PER FISSION          9237 1451     
+   Based on new delayed neutron 6-group parameters from CINDER'90 9237 1451     
+summation calculations.  The CINDER calculations (Wi05) are based 9237 1451     
+on a new CINDER library in which beta-decay half-lives and beta-  9237 1451     
+delayed neutron-emission probablities are obtained from the       9237 1451     
+evaluated experimental data file NuBase2003 (Au03), when          9237 1451     
+available there. When experimental data are not available, the    9237 1451     
+data are calculated using a model where allowed Gamow-Teller      9237 1451     
+decays are treated in a microscopic quasi-particle random-phase   9237 1451     
+approximation (QRPA) and the first forbidden decays are treated   9237 1451     
+in the statistical gross theory (Mo03). The data were             9237 1451     
+extrapolated to 30 MeV.                                           9237 1451     
+                                                                  9237 1451     
+MT=456: AVERAGE PROMPT NEUTRON MULTIPLICITY PER FISSION           9237 1451     
+   1.e-5 eV - 30 MeV:  Taken from the ENDF/B-VI evaluation,       9237 1451     
+except nubar was extended to 30 MeV. Values above 4-6 MeV were    9237 1451     
+renormalized to match the ENDF/B-VII standard 252Cf nubar value.  9237 1451     
+The values below 6 MeV were left at the ENDF/B-VI values because  9237 1451     
+of good agreement with fast criticals. The new evaluation agrees  9237 1451     
+generally with exp. data within errors. The original ENDF/B-VI    9237 1451     
+evaluation is based on an evaluation by Frehaut (Fr86), with an   9237 1451     
+approximate correction for ENDF/B-VI standards. That evaluation   9237 1451     
+made use of the experimental database, especially the extensive   9237 1451     
+measurements of Frehaut et al. (Fr80).                            9237 1451     
+                                                                  9237 1451     
+MT=458:  ENERGY RELEASE FROM FISSION                              9237 1451     
+   Modifications were made to MT=458 based on a new analysis by   9237 1451     
+Madland (Ma06). The average total fission product kinetic energy  9237 1451     
+(EFR) and the average total prompt fission gamma-ray energy (EGP) 9237 1451     
+were taken from the Madland analysis. The average total prompt    9237 1451     
+fission neutron kinetic energy (ENP) was obtained from NJOY,      9237 1451     
+using the MF=5,MT=18 fission neutron spectra and prompt nubar     9237 1451     
+(MT=1,MT=456) from the evaluation. (This value of total neutron   9237 1451     
+energy is close to Madland's result.) The kinetic energy of       9237 1451     
+delayed fission neutrons (END), the total energy from delayed     9237 1451     
+gamma rays (EGD), the total energy released by delayed betas      9237 1451     
+(EB), and the energy released by neutrinos (ENU) were carried     9237 1451     
+over from the ENDF/B-VI evaluation. The total energy release per  9237 1451     
+fission is: ET = EFR+ENP+END+EGP+EGD+EB+ENU, and the quantity ER  9237 1451     
+(total energy less the neutrino energy, or pseudo-Q value) is     9237 1451     
+simply ET-ENU. ER is also included as the fission Q-value in      9237 1451     
+MF=3, MT=18,19,20,21,38.                                          9237 1451     
+   The uncertainties in EFR, ENP, END, EGP, EGD, EB, ENU, ER, and 9237 1451     
+ET are carried over from ENDF/B-VI.                               9237 1451     
+   There is currently no format for including energy dependence   9237 1451     
+in the ENDF/B file.  These are included in the NJOY processing.   9237 1451     
+                                                                  9237 1451     
+            ----- REFERENCES (MF=1) -----                         9237 1451     
+Au03 G. Audi, O. Bersillon, J. Blanchot, and A. H. Wapstra, Nucl. 9237 1451     
+     Phys. A729 (2003) p. 3-129.                                  9237 1451     
+Fr80 J. Frehaut, personal communication to NEA Data Bank, Saclay, 9237 1451     
+     France 1980).                                                9237 1451     
+Fr86 J. Frehaut, NEANDC(E) 238/L (1986)                           9237 1451     
+Ma06 D. G. Madland, Nucl. Phys. A772, 113 (2006).                 9237 1451     
+Mo03 P. Moller, B. Pfeiffer, and K.-L. Kratz, Phys. Rev. C. 67    9237 1451     
+     (2003) 055802.                                               9237 1451     
+Wi05 W. B. Wilson, personal communication, 2005.                  9237 1451     
+                                                                  9237 1451     
+>> MF=2 RESONANCE PARAMETERS                                      9237 1451     
+                                                                  9237 1451     
+MT=151 RESOLVED AND UNRESOLVED RESONANCE PARAMETERS               9237 1451     
+                                                                  9237 1451     
+  ----- RESOLVED RESONANCE PARAMETERS (1.e-5 ev - 20 keV) -----   9237 1451     
+H. Derrien, A. Courcelle, L. C. Leal, N. Larson (ORNL, Oct 2004)  9237 1451     
+                                                                  9237 1451     
+   A new analysis of the resolved resonance region to 20 keV was  9237 1451     
+performed at Oak Ridge National Laboratory, dated October, 2004.  9237 1451     
+This evaluation was performed with the computer code SAMMY (La04) 9237 1451     
+using Reich-Moore formalism. Resonance parameters are obtained    9237 1451     
+from 0 to 20 keV. A description of the present evaluation can be  9237 1451     
+found in (De04).                                                  9237 1451     
+                                                                  9237 1451     
+1. 1.e-5 eV to 1 keV                                              9237 1451     
+   The thermal capture value was adjusted to sigma0 = 2.683 b     9237 1451     
+(Trkov et al. [Tr04]). The shape of the capture cross-section in  9237 1451     
+the thermal range was checked with the capture measuremements of  9237 1451     
+Corvi et al. [Co87]. For the large s-wave 6.67 eV, 20.8 eV and    9237 1451     
+36.6 eV resonances, the seven transmission spectra of Olsen       9237 1451     
+[Ol77] were fitted with 4 transmission measurements of Meister et 9237 1451     
+al. [Me98] and the capture measurements of De-Saussure et al      9237 1451     
+[De73]. To get a better correction of residual errors in          9237 1451     
+experimental normalizations and backgrounds, SAMMY fits were      9237 1451     
+performed resonance by resonance up to 60 eV. The Crystal Lattice 9237 1451     
+Model of SAMMY for Doppler broadening was used to describe the    9237 1451     
+shape of the 6.67 eV resonance.                                   9237 1451     
+   From 250 eV to 1 keV the Macklin et al. capture [Ma88]         9237 1451     
+measurements were included in the fit. The spin of several p-wave 9237 1451     
+resonances have been changed from the original evaluation         9237 1451     
+([So94]) to account for the spin measurements of Gunsing et al.   9237 1451     
+[Gu97]. Reliable estimates of p-wave neutron widths               9237 1451     
+below 300 eV were given by Crawford et al. [Cr98] with very thick 9237 1451     
+uranium sample transmission measurements and were used as prior   9237 1451     
+parameters in the fit.                                            9237 1451     
+   The fission widths (below 10 keV) are taken from ENDF\B-VI     9237 1451     
+[So94] and were deduced from the Measurements of Defilippo et al. 9237 1451     
+[De80]                                                            9237 1451     
+                                                                  9237 1451     
+ 2.  1 keV to 20 keV                                              9237 1451     
+   The Olsen 1979 transmission data [Ol79] were analyzed in the   9237 1451     
+energy range 1 keV to 10 keV and the Harvey transmission data     9237 1451     
+[Ha88] in the energy range 1 keV to 20 keV. The capture data of   9237 1451     
+de Saussure[De73] and Macklin[Ma88] were analyzed in the energy   9237 1451     
+range 1 keV to 10 keV and 1 keV to 20 keV respectively. In        9237 1451     
+general, the thick sample transmissions calculated from the       9237 1451     
+resonance parameters and averaged over 1 keV energy intervals     9237 1451     
+agree within 1% with the experimental values of Harvey and within 9237 1451     
+1.5% with the experimental values of Olsen, in agreement with the 9237 1451     
+quoted experimental errors, The fit to the capture cross sections 9237 1451     
+could not be obtained without large normalization and background  9237 1451     
+corrections.                                                      9237 1451     
+   The value of the effective scattering radius, R'=9.48 fm, and  9237 1451     
+of the external resonance parameters, were obtained by assuming   9237 1451     
+that the normalization coefficients in Harvey and Olsen           9237 1451     
+experimental transmission were accurate within 1.0-1.5%. The      9237 1451     
+statistical properties of the resonance parameters were checked   9237 1451     
+against the Wigner distribution of the level spacing and the      9237 1451     
+Porter-Thomas distribution of the reduced neutron widths.         9237 1451     
+                                                                  9237 1451     
+----- UNRESOLVED RESONANCE PARAMETERS (20 - 149 keV) -----        9237 1451     
+   The ENDF/B-VI (Release 8) unresolved resonance parameter       9237 1451     
+evaluation by Froehner and Poenitz (see Fr88,Po81) was adopted.   9237 1451     
+                                                                  9237 1451     
+                 ----- REFERENCES (MF=2) -----                    9237 1451     
+Co87 F. Corvi, G. Fioni, Proc. Conf. Nuc. Data for Sci. and       9237 1451     
+     Tech., Mito, Japan, (1988).                                  9237 1451     
+Co04 A. Courcelle et al., Summary report of the WPEC/Subgroup-22, 9237 1451     
+     NEA report to be published.                                  9237 1451     
+Cr98 B. E. Crawford et al., Phys. Rev. C, 58, Num 2 (1998).       9237 1451     
+De73 G. De Saussure, E. G. Silver, R. B. Perez ,R. Ingle and H.   9237 1451     
+     Weaver, Nucl. Sci. and Eng., 5, 385 (1973).                  9237 1451     
+De80 F.C. Difilippo et al, Phys.Rev.C 21, 1400 (1980).            9237 1451     
+De04 H. Derrien, A. Courcelle, L. C. Leal, A.Santamarina Proc.    9237 1451     
+     Int. Conf. on Nuc. Data for  Sci. and Tech., Santa-Fe, USA   9237 1451     
+     (2004).                                                      9237 1451     
+Fr88 F. H. Frohner, Nucl. Sci. and Eng.,103 (1988); F. H.         9237 1451     
+     Frohner, Proc. Int. Conf. on Reactor Phys., Jackson Hole,    9237 1451     
+     Wyoming (1988) Vol. III, p. 171.                             9237 1451     
+Gu97 F. Gunsing, K. Athanassopulos, and F. Corvi, Phys. Rev. C,   9237 1451     
+     56, Num 3 (1997).                                            9237 1451     
+Ha88 Harvey J. A., Hill N. W., Perey F. G., Tweed G. L. and Leal  9237 1451     
+     L. C, Proc. Int. Conf. on nuclear data for Science and       9237 1451     
+     Technology, Mito, Japan (1988).                              9237 1451     
+La04 N. M. Larson, ORNL/TM-9179/R6 ENDF-364.                      9237 1451     
+Ma88 Macklin Roger L., Perez R. B., De Saussure G. and Ingle      9237 1451     
+     R. W., Proc. Int. Conf. on nuclear data for Science and      9237 1451     
+     Technology, Mito, Japan (1988).                              9237 1451     
+Me98 A. Meister et al., Proc. Conf. Nuc. Data, Long Island,       9237 1451     
+     October 5-8, (1998).                                         9237 1451     
+Ol77 D.K. Olsen, G. De Saussure, R.B. Perez, F.C. Difilippo, R.W. 9237 1451     
+     Ingle, and H. Weaver, Nucl. Sci. and Eng., 62, 479 (1977).   9237 1451     
+Ol79 D.K. Olsen, G. De Saussure, R.B. Perez, F.C. Difilippo, R.W. 9237 1451     
+     Ingle, and H. Weaver, Nucl. Sci. and Eng., 69, 202-222       9237 1451     
+     (1979).                                                      9237 1451     
+Po81 W. P. Poenitz, L.R. Fawcett Jr and D.L. Smith, Nucl. Sci.    9237 1451     
+     Eng., 78, (1981) 239-247.                                    9237 1451     
+So94 M. Moxon and M. Sowerby, NEA-OECD report (1994).             9237 1451     
+Tr04 A. Trkov et al., personal communication, submitted to Nucl.  9237 1451     
+     Sci. Eng. (2004).                                            9237 1451     
+                                                                  9237 1451     
+>> MF=3 NEUTRON CROSS SECTIONS                                    9237 1451     
+                                                                  9237 1451     
+              ----- GENERAL INFORMATION -----                     9237 1451     
+   The energy range of the evaluation (Yo04) was increased to 30  9237 1451     
+Mev. Above the unresolved resonance region, new evaluations were  9237 1451     
+performed of the neutron total, elastic, (n,n'), (n,2n), (n,3n),  9237 1451     
+(n,4n), (n,f), (n,nf), (n,2nf), (n,4nf), and (n,gamma) cross      9237 1451     
+sections, as well as their associated angular and energy          9237 1451     
+distributions. The total (MT=1), (n,xn) (MT=16,17), fission       9237 1451     
+(MT=18), and radiative capture (MT=102) cross sections are based  9237 1451     
+mainly on experimental data, complimented by nuclear model        9237 1451     
+calculations. Model parameters for the calculations were obtained 9237 1451     
+by optimization with experimental data. The neutron total and     9237 1451     
+(n,f) cross section revisions include new experimental data that  9237 1451     
+were not included in the ENDF/B-VI 238U analysis.                 9237 1451     
+   To provide the ENDF/B-VII data, a new theoretical analysis was 9237 1451     
+performed. Coupled-channels optical model calculations were       9237 1451     
+performed with the ECIS96 (Ra94) code for the lowest 3 members of 9237 1451     
+the U238 ground state rotational band. These calculations were    9237 1451     
+used to provide elastic and inelastic cross sections and angular  9237 1451     
+distributions, and to provide neutron transmission coefficients   9237 1451     
+for nuclear reaction theory calculations with the GNASH (Yo98)    9237 1451     
+and COMNUC (Du71) Hauser-Feshbach statistical-fission-            9237 1451     
+preequilibrium codes.  These model calculations were used to      9237 1451     
+provide initial values of the MT=51-72 inelastic, (n,2n), (n,3n), 9237 1451     
+and (n,f) cross sections, which were then modified somewhat to    9237 1451     
+optimize agreement with experimental data. The coupled-channels   9237 1451     
+optical model potential used is potential #5 in the International 9237 1451     
+Atomic Energy Agency's Reference Input Parameter Library (RIPL-2) 9237 1451     
+optical model parameter library (see Yo94).                       9237 1451     
+   The GNASH calculations were used directly for the correlated   9237 1451     
+energy-angle spectra in MF=6 for the (n,n'continuum), (n,2n),     9237 1451     
+(n,3n), and (n,4n) reactions. The continuum data in MF=6          9237 1451     
+incorporate the Kalbach systematics (Ka88) to specify the neutron 9237 1451     
+angular distributions at given emission energies.                 9237 1451     
+   The cross sections and angular distributions for MT=73-90 were 9237 1451     
+obtained by calculations with ECIS96 of DWBA shapes from          9237 1451     
+parameters obtained by matching the Baba (Ba89) neutron emission  9237 1451     
+data at 14 MeV. These calculations assumed the existence of 2+    9237 1451     
+and 3- vibrational states at excitation energies from 1.2 to 3.9  9237 1451     
+MeV. Preequilibrium angular distribution shapes were used for     9237 1451     
+MT=54-72 above 6 MeV.  Below 6 MeV, the MT=54-72 cross sections   9237 1451     
+and angular distributions are combinations of compound nucleus    9237 1451     
+and preequilibrium calculations. Some tuning for experimental     9237 1451     
+data was done for the low-lying (n,n') level data.                9237 1451     
+   The fission cross section (MT=18) from ENDF/B-VI was modified  9237 1451     
+in the energy region above 1.0 MeV to reflect the new ENDF/B-VII  9237 1451     
+238U(n,f) cross section obtained from the standards analysis of   9237 1451     
+Pronyaev et al. (Pr05)  The modified cross section incorporates   9237 1451     
+new fission cross section data, including that of Lisowski        9237 1451     
+(Li02), and adjusts the cross section slightly higher from 1.3 -  9237 1451     
+5.3 MeV.                                                          9237 1451     
+   The present evaluation utilizes some data from the ENDF/B-VI   9237 1451     
+evaluation. The total cross section below 6 MeV and the (n,f)     9237 1451     
+cross section from 20 to 970 keV are taken from ENDF/B-VI.        9237 1451     
+   The (n,5n) cross section becomes significant above about 25    9237 1451     
+MeV.  Because there is no ENDF-6 MT number for this reaction, we  9237 1451     
+have arbitrarily included this cross section in the (n,4n)        9237 1451     
+reaction.  Consequently, the (n,4n) cross section becomes         9237 1451     
+somewhat unphysical above about 25 MeV.                           9237 1451     
+                                                                  9237 1451     
+           ----- DETAILS OF LANL REVISION -----                   9237 1451     
+                                                                  9237 1451     
+MT=1: TOTAL CROSS SECTION                                         9237 1451     
+   20 keV - 6 MeV:  Obtained from the ENDF/B-VI evaluation. In    9237 1451     
+the unresolved resonance region (20 to 149 keV, the evaluation by 9237 1451     
+F.H. Froehner (KFK - Fr88), which is based on a FITACS fit to     9237 1451     
+experimental data, is used.                                       9237 1451     
+   The results of a covariance analysis performed for the ENDF/B- 9237 1451     
+VI evaluation are used from the unresolved energy region to 6     9237 1451     
+MeV. The analysis was performed using the GLUCS code system       9237 1451     
+(He80) and included the measurements of (Fo71), (Sc74), (Po81),   9237 1451     
+(Po83), (Ha73),  (Br58), (Ca73), (Pe60), (Wh71), (Ba65), (Ut66),  9237 1451     
+(Sh79), and (Li79). Data exclusions similar to the covariance     9237 1451     
+analysis by Smith et al. [Sm82] were used, but additional data    9237 1451     
+were included in the analysis.  The prior cross section for the   9237 1451     
+analysis was taken from the coupled-channel analysis, described   9237 1451     
+above.                                                            9237 1451     
+   6 - 30 MeV:  The neutron total cross section from the          9237 1451     
+covariance analysis was revised above En=6 MeV to agree more      9237 1451     
+closely with the experimental data of Abfaulterer et al. [Ab00].  9237 1451     
+The changes were generally a lowering of the cross section        9237 1451     
+between 6 and 17 MeV, and an increase above 17 MeV.  The maximum  9237 1451     
+change was about 1.7% but generally the changes were of the order 9237 1451     
+of a few tenths of a percent.  Additionally, the Abfaulterer data 9237 1451     
+were used to extend the evaluation from 20 to 30 MeV.             9237 1451     
+                                                                  9237 1451     
+MT=2: ELASTIC SCATTERING CROSS SECTION                            9237 1451     
+   The elastic cross section is obtained by subtracting the       9237 1451     
+nonelastic cross section (MT=3) from the total cross section      9237 1451     
+(MT=1).                                                           9237 1451     
+                                                                  9237 1451     
+MT=3: NONELASTIC CROSS SECTION                                    9237 1451     
+   The (redundant) nonelastic cross section is the sum of the     9237 1451     
+following reactions: MT=4,16,17,18,37,102.                        9237 1451     
+                                                                  9237 1451     
+MT=4: INELASTIC CROSS SECTION                                     9237 1451     
+   Sum of MT=51-91.                                               9237 1451     
+                                                                  9237 1451     
+MT=16: (n,2n) CROSS SECTION                                       9237 1451     
+    Based on a combination of results from the GNASH calculations 9237 1451     
+(see above), the covariance analysis used for the ENDF/B-VI       9237 1451     
+analysis, and new experimental data.  The ENDF/B-VI covariance    9237 1451     
+analysis included the measurements of (Ba66), (Fr80), (Ko80),     9237 1451     
+(Yo78), (Ma69), (Ma72), (Ka79), (La73), (Ro57), (Ph56), (Pe61),   9237 1451     
+(Ve78), (An58), and (Ry80). It utilized the GLUCS code of Hetrick 9237 1451     
+and Fu (He80).                                                    9237 1451     
+                                                                  9237 1451     
+MT=17: (n,3n) CROSS SECTION                                       9237 1451     
+   Same comment as MT=16. In this case the experimental data of   9237 1451     
+(Fr80), (Wh62), (Ro57), (Ma69), (Al61), and (Ve78) were used in   9237 1451     
+the covariance analysis.                                          9237 1451     
+                                                                  9237 1451     
+MT=18: FISSION NEUTRON CROSS SECTION                              9237 1451     
+   20 keV - 1.0 MeV:  The fission cross section in this energy    9237 1451     
+range is the same as ENDF/B-VI. That is, it is based on the       9237 1451     
+unresolved resonance parameter analysis of Froehner and Poenitz   9237 1451     
+(Fr88,Po81) and on the ENDF/B-VI standards analysis, which is     9237 1451     
+similar to the ENDF/B-VII analysis at these energies.             9237 1451     
+   1.0 - 30.0 MeV:  The fission cross section in the energy       9237 1451     
+region above 1.0 MeV is based on results from the ENDF/B-VII      9237 1451     
+standards cross section analysis of Pronyaev et al. (Pr05).  The  9237 1451     
+238U(n,f) cross section is taken directly from the Version VII    9237 1451     
+standards analysis. The original standards energy grid is         9237 1451     
+included as a subset of a larger energy grid for the cross        9237 1451     
+section.  The expansion to the denser grid was accomplished using 9237 1451     
+a spline fit to a log-log file of the 238U(n,f) data from the     9237 1451     
+standards analysis.                                               9237 1451     
+   The Q-value was changed from 198.06 MeV to 198.032 MeV to      9237 1451     
+maintain consistency with the MF=1,MT=458 data.                   9237 1451     
+                                                                  9237 1451     
+MT=19,20,21,38: MULTI-CHANCE FISSION CROSS SECTIONS               9237 1451     
+   The ratios of the multi-chance fission cross sections to the   9237 1451     
+total fission cross section were obtained from GNASH              9237 1451     
+calculations.  The evaluated multi-chance fission cross sections  9237 1451     
+were then obtained by multiplying the MT=18 total fission cross   9237 1451     
+section by the ratios.                                            9237 1451     
+   The Q-value was changed from 198.06 MeV to 198.032 MeV to      9237 1451     
+maintain consistency with the MF=1,MT=458 data.                   9237 1451     
+                                                                  9237 1451     
+MT=37: (n,4n) CROSS SECTION                                       9237 1451     
+   Threshold to 20 MeV, taken directly from the GNASH analysis    9237 1451     
+described above.  Above about 25 MeV, it also includes the        9237 1451     
+238U(n,5n) cross section.                                         9237 1451     
+                                                                  9237 1451     
+MT=51-71 DISCRETE INELASTIC LEVEL CROSS SECTIONS                  9237 1451     
+   Coupled channel optical model calculations were performed with 9237 1451     
+the ECIS96 code for the lowest 3 members of the U238 ground state 9237 1451     
+rotational band (MT=2,51,52), including compound nucleus          9237 1451     
+contributions. These calculations were also used to provide       9237 1451     
+neutron transmission coefficients for nuclear reaction theory     9237 1451     
+calculations with the GNASH (Yo98) and COMNUC (Du71) Hauser-      9237 1451     
+Feshbach statistical-fission-preequilibrium codes.  See           9237 1451     
+description above under GENERAL INFORMATION. These latter theory  9237 1451     
+calculations were used to provide the MT=54-72 inelastic cross    9237 1451     
+sections, and separate coupled-channels calculations were         9237 1451     
+utilized for MT=53. Several of the low-lying level cross sections 9237 1451     
+were modified somewhat, primarily to optimize agreement with      9237 1451     
+experimental data.                                                9237 1451     
+                                                                  9237 1451     
+MT=72-90: DISCRETE INELASTIC LEVEL CROSS SECTIONS (DIRECT         9237 1451     
+          REACTIONS TO GROUPS OF STATES)                          9237 1451     
+   The cross section values in MT=72-90 are based upon Baba's     9237 1451     
+neutron emission cross section data (Ba89) at 14 MeV for n + 238U 9237 1451     
+reactions. To accomplish this, new DWBA calculations were run     9237 1451     
+with the ECIS96 code, assuming the direct reactions occur mainly  9237 1451     
+to 2+ or 3- vibrational states, and deformation parameters were   9237 1451     
+determined by matching the 14-MeV Baba data.  The specific J,Pi   9237 1451     
+assignments were made initially on the basis of the magnitude of  9237 1451     
+the cross sections but were adjusted by trial and error to best   9237 1451     
+accommodate the 14-MeV data. The cross section for each MT number 9237 1451     
+in this range should be interpreted as the integrated cross       9237 1451     
+section for several levels populated by direct reactions in the   9237 1451     
+neighborhood of the excitation energy given for the MT number.    9237 1451     
+   The DWBA calculations were used to extrapolate the 14-MeV      9237 1451     
+cross sections to lower and higher energies, and to obtain the    9237 1451     
+MF=4 angular distributions for each assumed state. The spins,     9237 1451     
+parities, and deformation parameters used in the calculations are 9237 1451     
+given in the table below. These results affect the evaluation in  9237 1451     
+the excitation energy range Ex=1.17-3.91 MeV.                     9237 1451     
+                                                                  9237 1451     
+  MT    Ex (MeV)    J   Pi    Beta                                9237 1451     
+      0.00000000   0.0  +1  0.0000E+00                            9237 1451     
+  72  1.17000000   3.0  -1  3.8087E-02                            9237 1451     
+  73  1.25000000   2.0  +1  3.0175E-02                            9237 1451     
+  74  1.44000000   3.0  -1  5.6001E-02                            9237 1451     
+  75  1.59000000   3.0  -1  3.8111E-02                            9237 1451     
+  76  1.75000000   3.0  -1  3.9460E-02                            9237 1451     
+  77  1.85000000   3.0  -1  3.5265E-02                            9237 1451     
+  78  1.95000000   3.0  -1  4.0750E-02                            9237 1451     
+  79  2.15000000   3.0  -1  4.7400E-02                            9237 1451     
+  80  2.30000000   3.0  -1  5.3002E-02                            9237 1451     
+  81  2.39000000   4.0  +1  8.8154E-03                            9237 1451     
+  82  2.49000000   2.0  +1  2.5122E-02                            9237 1451     
+  83  2.94000000   2.0  +1  2.7150E-02                            9237 1451     
+  84  3.18900000   2.0  +1  2.5287E-02                            9237 1451     
+  85  3.38800000   2.0  +1  2.5070E-02                            9237 1451     
+  86  3.53800000   2.0  +1  1.5390E-02                            9237 1451     
+  87  3.63700000   2.0  +1  1.6125E-02                            9237 1451     
+  88  3.73700000   2.0  +1  1.6472E-02                            9237 1451     
+  89  3.83700000   2.0  +1  1.4293E-02                            9237 1451     
+  90  3.90900000   2.0  +1  1.5091E-02                            9237 1451     
+                                                                  9237 1451     
+MT=91:  INELASTIC CONTINUUM NEUTRON CROSS SECTION                 9237 1451     
+   Based on the GNASH Hauser-Feshbach statistical/preequilibrium  9237 1451     
+calculations, described above. Note that MT=91 thresholds at 1.11 9237 1451     
+MeV.  Therefore, discrete states with excitation energies above   9237 1451     
+1.11 MeV (MT=72-90) lie in the MT=91 continuum region.            9237 1451     
+                                                                  9237 1451     
+MT=102: NEUTRON RADIATIVE CAPTURE CROSS SECTION                   9237 1451     
+   10 to 149 keV:  Based on the ENDF/B-VI (Release 8) unresolved  9237 1451     
+resonance parameter evaluation by Froehner and Poenitz (see       9237 1451     
+Fr88,Po81). That evaluation is based on a FITACS fit to the       9237 1451     
+experimental data.                                                9237 1451     
+   0.15 to 2.2 MeV:  Based on the simultaneous standards analysis 9237 1451     
+by Pronyaev et al. (Pr05).                                        9237 1451     
+   2.2 - 30 MeV:  Follows the JENDL-3.0 evaluation.  The results  9237 1451     
+in the 8-14 MeV range agree closely with the measurements of      9237 1451     
+McDaniels et al. (Mc82) and Drake et al. (Dr71).                  9237 1451     
+                                                                  9237 1451     
+             ----- REFERENCES (MF=3) -----                        9237 1451     
+Al61 K. Allen et al., J.Nuc.En. 14, 100 (1961).                   9237 1451     
+An58 G. Antropov et al., At.En. 5, 456 (1958).                    9237 1451     
+Ba66 D. Barr, Los Aalamos National Lab., private communication    9237 1451     
+     to R.Howerton (1966).                                        9237 1451     
+Ba65 R. Batchelor et al., Nuc.Phys. 65, 236 (1965).               9237 1451     
+Ba89 M. Baba, H. Wakabayashi, N. Itoh, K. Maeda, and N. Hirakawa, 9237 1451     
+     "Measurements of Prompt Fission Neutron Spectra and Double-  9237 1451     
+     Differential Neutron Inelastic Scattering Cross Sections for 9237 1451     
+     238-U and 232-Th," IAEA Int. Nucl. Data report INDC(JPN)-129 9237 1451     
+     (1989).                                                      9237 1451     
+Br58 A. Bratenahl et al., Phys.Rev. 110, 927 (1958).              9237 1451     
+Ca73 J. Cabe et al., CEN Saclay report CEA-R-4524 (1973).         9237 1451     
+Ca85 A. Carlson et al., Nucl. Data for Basic & Applied Science,   9237 1451     
+     Proc.Conf., Santa Fe, NM 1985 [] p.1429.                     9237 1451     
+Di80 F.C. Difillippo et al., Phys.Rev.C 21, 1400 (1980).          9237 1451     
+Dr71 D. Drake, M. I. Bergqvist, and D. K. McDaniels, Phys. Lett.  9237 1451     
+     B36, 557 (1971).                                             9237 1451     
+Du71 C.L.Dunford, "Compound Nucleus Reaction Analysis Programs    9237 1451     
+     COMNUC and CASCADE," Atomics International North American    9237 1451     
+     Rockwell report AI-AEC-12931 (document no. TI-707-130-013)   9237 1451     
+     (February, 1971).                                            9237 1451     
+Fo71 D. Foster and D. Glasgow, Phys.Rev.C 3, 576 (1971).          9237 1451     
+Fr80 J. Frehaut et al., Nucl.Sci.Eng. 74, 29 (1980); J. Frehaut   9237 1451     
+     et al., Brookhaven National Lab. report BNL-NCS-512457       9237 1451     
+     (1980) p.399.                                                9237 1451     
+Fr86 J. Frehaut, NEANDC(E) 238/L (1986).                          9237 1451     
+Fr88 F. H. Frohner, Nucl. Sci. and Eng.,103 (1988); F. H.         9237 1451     
+     Frohner, Proc. Int. Conf. on Reactor Phys., Jackson Hole,    9237 1451     
+     Wyoming (1988) Vol. III, p. 171.                             9237 1451     
+Ha73 S. Hayes et al., Nuc.Sci.Eng. 50, 243 (1973).                9237 1451     
+He80 D. Hetrick and C.Y. Fu, Oak Ridge National Lab. report       9237 1451     
+     ORNL/TM-7341 (1980).                                         9237 1451     
+Ka78 R. Kaiser and S. Carpenter (ANL-West) private                9237 1451     
+     communication (1978).                                        9237 1451     
+Ka88 C. Kalbach, "Systematics of Continuum Angular                9237 1451     
+     Distributions: Extensions to Higher Energies," Phys.Rev.C    9237 1451     
+     37, 2350 (1988); see also C. Kalbach and F. M. Mann,         9237 1451     
+     "Phenomenology of Continuum Angular Distributions. I.        9237 1451     
+     Systematics and Parameterization," Phys.Rev.C 23, 112        9237 1451     
+     (1981).                                                      9237 1451     
+Ko80 N. Kornilov et al., report ZFK-410 (1980) p.68.              9237 1451     
+La73 J. Landrum et al., Phys.Rev.C 8, 1938 (1973).                9237 1451     
+Li79 P. Lisowski et al., (LANL WNR measurement) private           9237 1451     
+     communication (1979).                                        9237 1451     
+Ma69 D. Mather, report AWRE-O-47 (1969).                          9237 1451     
+Ma72 D. Mather et al., report AWRE-O-72 (1972).                   9237 1451     
+Mc82 D. K. McDaniels, P. Varghese, D. M. Drake, E. Arthur, A.     9237 1451     
+     Lindholm, M. I. Bergqvist, and J. Krumlinde, Nuc. Phys.      9237 1451     
+     A384, 88 (1982).                                             9237 1451     
+Pe60 J. Peterson et al., Phys.Rev. 120, 521 (1960).               9237 1451     
+Pe61 J. Perkin, J.Nuc.En. 14, 69 (1961).                          9237 1451     
+Ph56 J. Phillips, report AERE-NP/R-2033 (1956).                   9237 1451     
+Po81 W. P. Poenitz, L.R. Fawcett Jr and D.L. Smith, Nucl. Sci.    9237 1451     
+     Eng., 78, (1981) 239-247.                                    9237 1451     
+Po83 W.Poenitz et al., Argonne National Lab. report               9237 1451     
+     ANL-NDM-80 (1983).                                           9237 1451     
+Po89 W. Poenitz, ANL-West, private communication (1989).          9237 1451     
+Pr05 V.G. Pronyaev, S.A.Badikov, A.D. Carlson, Z. Chen, E.V. Gai, 9237 1451     
+     G.M. Hale, F.-J. Hambsch, H.M. Hofmann, T. Kawano, N.M.      9237 1451     
+     Larson, S.-Y. Oh, D.L. Smith, S. Tagesen, and H. Vonach,     9237 1451     
+     personal communication (2005); see also: "An International   9237 1451     
+     Evaluation of the Neutron Cross Section Standards," to be    9237 1451     
+     published as an IAEA Technical report (2006).                9237 1451     
+Ra94 J. Raynal, "Notes on ECIS94," Centre d'Etudes Nucleaires     9237 1451     
+     (Saclay) report CEA-N-2772 (1994).                           9237 1451     
+Ro57 L. Rosen et al., Los Alamos National Lab. report LA-2111     9237 1451     
+     (1958).                                                      9237 1451     
+Ry80 T. Ryves, J.Phys.G 6, 771 (1980).                            9237 1451     
+Sc74 R. Schwartz et al., Nuc.Sci.Eng. 54, 322 (1974).             9237 1451     
+Sh78 R. Shamu et al., private communication (1978).               9237 1451     
+Sl77 R. Slovacek et al., Nuc.Sci.Eng. 62, 455 (1977).             9237 1451     
+Sm82 A. Smith et al., Argonne National Lab. report ANL/NDM-74     9237 1451     
+     (1982).                                                      9237 1451     
+Ut66 C. Uttley et al., Paris Conf. (1966) vol.1, p.165.           9237 1451     
+Ve78 L. Veeser and E. Arthur, Harwell Nuc.Data Conf. (1978)       9237 1451     
+     p 1054.                                                      9237 1451     
+Wh62 P. White et al., J.Nuc.En.A/B 16, 261 (1962).                9237 1451     
+Wh71 J. Whalen et al., Argonne National Lab. report ANL-7710      9237 1451     
+     (1971) p.9.                                                  9237 1451     
+Yo78 Chou You-Pu, report HSJ-77091 (1978).                        9237 1451     
+Yo94 P. G. Young, "Experience at Los Alamos with Use of the       9237 1451     
+     Optical Model for Applied Nuclear Data Calculations," Los    9237 1451     
+     Alamos National Laboratory report LA-UR-94-3104 (1994).      9237 1451     
+Yo96 P. G. Young, E. D. Arthur, and M. B. Chadwick,               9237 1451     
+     "Comprehensive Nuclear Model Calculations: Theory and Use of 9237 1451     
+     the GNASH Code," Proc. Workshop on Nuclear Reaction Data and 9237 1451     
+     Nuclear Reactors, ICTP, Trieste, Italy, 15 April - 17 May    9237 1451     
+     1996 [Ed: A. Gandini and G. Reffo, World Scientific Publ.    9237 1451     
+     Co., Singapore (1999)] p. 227-404 (LA-UR-96-3739).           9237 1451     
+Yo04 P. G. Young, M. B. Chadwick, R. E. MacFarlane, P. Talou, T.  9237 1451     
+     Kawano, D. G. Madland, and W. B. Wilson, "Analysis and       9237 1451     
+     Evaluation of Neutron Reactions on 238U," Los Alamos         9237 1451     
+     National Laboratory report LA-UR-04-6456 (2004).             9237 1451     
+                                                                  9237 1451     
+>> MF=4 ANGULAR DISTRIBUTIONS OF SECONDARY PARTICLES              9237 1451     
+                                                                  9237 1451     
+MT=2: NEUTRON ELASTIC SCATTERING ANGULAR DISTRIBUTIONS            9237 1451     
+   1.e-5 eV - 10.0 MeV:   Elastic scattering angular distribution 9237 1451     
+up to 10 MeV are taken from the evaluation of Maslov (Ma03).      9237 1451     
+   10 - 30 MeV:  Elastic angular distributions are based on the   9237 1451     
+coupled-channels optical model calculations with the ECIS96 code  9237 1451     
+(Ra94,Yo94) of the lowest 3 members of the ground-state           9237 1451     
+rotational band, described above.  The calculations include       9237 1451     
+direct and compound elastic contributions.                        9237 1451     
+                                                                  9237 1451     
+MT=51-53: DISCRETE INELASTIC NEUTRON ANGULAR DISTRIBUTIONS FOR    9237 1451     
+          THE GROUND-STATE ROTATIONAL BAND                        9237 1451     
+   Threshold to 30.0 MeV:  Angular distributions again are based  9237 1451     
+on coupled-channels optical model calculations with the ECIS96    9237 1451     
+code (Ra94) of the ground-state rotational band, described above, 9237 1451     
+including direct and compound elastic contributions.              9237 1451     
+                                                                  9237 1451     
+MT=54-71: DISCRETE INELASTIC NEUTRON ANGULAR DISTRIBUTIONS        9237 1451     
+   Threshold to 30.0 MeV:  Angular distributions determined from  9237 1451     
+Hauser-Feshbach calculations with the COMNUC code (Du71) and      9237 1451     
+preequilibrium calculations with the GNASH code (Yo98). Above     9237 1451     
+about 6 MeV, the angular distribution shapes are entirely from    9237 1451     
+preequilibrium calculations.                                      9237 1451     
+                                                                  9237 1451     
+MT=72-90: DISCRETE INELASTIC NEUTRON ANGULAR DISTRIBUTIONS FOR    9237 1451     
+          DIRECT REACTIONS                                        9237 1451     
+   Threshold to 30.0 MeV:  DWBA calculations were run with the    9237 1451     
+ECIS96 code (Ra94), assuming the direct reactions occurred mainly 9237 1451     
+to 2+ or 3- vibrational states.  See description under MF=3,      9237 1451     
+MT=72-90. Deformation parameters were determined by matching the  9237 1451     
+14-MeV Baba data (Ba89), and the angular distributions are        9237 1451     
+generally consistent with those of the Baba data.                 9237 1451     
+                                                                  9237 1451     
+            ----- REFERENCES (MF=4) -----                         9237 1451     
+Ba89 M. Baba, H. Wakabayashi, N. Itoh, K. Maeda, and N. Hirakawa, 9237 1451     
+     "Measurements of Prompt Fission Neutron Spectra and Double-  9237 1451     
+     Differential Neutron Inelastic Scattering Cross Sections for 9237 1451     
+     238-U and 232-Th," IAEA Int. Nucl. Data report INDC(JPN)-129 9237 1451     
+     (1989).                                                      9237 1451     
+Du71 C.L.Dunford, "Compound Nucleus Reaction Analysis Programs    9237 1451     
+     COMNUC and CASCADE," Atomics International North American    9237 1451     
+     Rockwell report AI-AEC-12931 (document no. TI-707-130-013)   9237 1451     
+     (February, 1971).                                            9237 1451     
+Ma03 V. Maslov, Yu. V. Porodzinskij, N. A. Tetereva, A. B.        9237 1451     
+     Tagalenko, N. V. Kornilov, M. Baba, and A. Hasegawa,         9237 1451     
+     "Neutron Data Evaluation of 238U," International Atomic      9237 1451     
+     Energy Agency report INDC(BLR)-014, March, 2003.             9237 1451     
+Ra94 J. Raynal, "Notes on ECIS94," Centre d'Etudes Nucleaires     9237 1451     
+     (Saclay) report CEA-N-2772 (1994).                           9237 1451     
+Yo94 P. G. Young, "Experience at Los Alamos with Use of the       9237 1451     
+     Optical Model for Applied Nuclear Data Calculations," Los    9237 1451     
+     Alamos National Laboratory report LA-UR-94-3104 (1994).      9237 1451     
+Yo98 P. G. Young, E. D. Arthur, and M. B. Chadwick,               9237 1451     
+     "Comprehensive Nuclear Model Calculations: Theory and Use of 9237 1451     
+     the GNASH Code," Proc. Workshop on Nuclear Reaction Data and 9237 1451     
+     Nuclear Reactors, ICTP, Trieste, Italy, 15 April - 17 May    9237 1451     
+     1996 [Ed: A. Gandini and G. Reffo, World Scientific Publ.    9237 1451     
+     Co., Singapore (1998)] p. 227-404.                           9237 1451     
+                                                                  9237 1451     
+>> MF=5 ENERGY DISTRIBUTIONS OF SECONDARY PARTICLES               9237 1451     
+                                                                  9237 1451     
+MT=18: PROMPT FISSION NEUTRON SPECTRUM MATRIX                     9237 1451     
+   Prompt fission neutron spectrum matrix for the n + 238U system 9237 1451     
+was calculated (Ma02) using the Los Alamos (Madland-Nix) model    9237 1451     
+(MN82) in its exact formulation with energy-dependent compound    9237 1451     
+nucleus formation cross sections for the inverse processes. The   9237 1451     
+matrix includes first-, second-, third-, and fourth-chance        9237 1451     
+fission components and also includes the neutrons emitted prior   9237 1451     
+to fission in second-, third-, and fourth-chance fission. The     9237 1451     
+tabulated distribution law (LF=1) is used.                        9237 1451     
+   The matrix contains vectors (spectra) for 24 incident neutron  9237 1451     
+energies inducing the fission. These are:                         9237 1451     
+        0.0 0.5 1.0 1.5 2.0 2.5 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0  9237 1451     
+        11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 MeV     9237 1451     
+   Until more experimental data become available, spectra for     9237 1451     
+incident neutron energies above 20 MeV can be roughly             9237 1451     
+approximated by using the 20 MeV spectrum.  An average over the   9237 1451     
+spectra from 13 MeV to 18 MeV would be a better approximation.    9237 1451     
+The 30-MeV spectrum in the evaluation is the same as the 20-MeV   9237 1451     
+spectrum.                                                         9237 1451     
+   The multiple-chance fission average prompt neutron             9237 1451     
+multiplicity was calculated simultaneously and, in reproducing    9237 1451     
+experiment, was important in determining the matrix.              9237 1451     
+   The lowest incident neutron energy for a measured fission      9237 1451     
+cross section for n + 238U is just under 2 eV with a value of     9237 1451     
+about 5 microbarns.                                               9237 1451     
+                                                                  9237 1451     
+MT=455: DELAYED NEUTRON EMISSION SPECTRA FROM FISSION             9237 1451     
+   The abundances are based on the new delayed-neutron            9237 1451     
+calculations (Wi05) described under MF=1, MT=455. However, the    9237 1451     
+earlier six-group spectra from ENDF/B-VI are carried over to      9237 1451     
+ENDF/B-VII because new multigroup spectra have not yet been       9237 1451     
+calculated with the new library.                                  9237 1451     
+                                                                  9237 1451     
+           ----- REFERENCES (MF=5) -----                          9237 1451     
+Ma02 D. G. Madland, private communication, 12 December 2002.      9237 1451     
+MN82 D. G. Madland and J. R. Nix, Nucl. Sci. Eng. 81 (1982)       9237 1451     
+     213-271.                                                     9237 1451     
+Wi05 W. B. Wilson, personal communication, 2005.                  9237 1451     
+                                                                  9237 1451     
+>> MF=6 PRODUCT ENERGY-ANGULAR DISTRIBUTIONS                      9237 1451     
+                                                                  9237 1451     
+MT=16,17,37: (n,xn) CONTINUUM DISTRIBUTIONS                       9237 1451     
+   Based on the GNASH Hauser-Feshbach statistical/preequilibrium  9237 1451     
+calculations described above. Updated Kalbach-Mann systematics    9237 1451     
+are used for specifying neutron distributions (Ka88). Only        9237 1451     
+neutron distributions are given.                                  9237 1451     
+                                                                  9237 1451     
+MT=91: (n,n') CONTINUUM DISTRIBUTIONS                             9237 1451     
+   Based on the GNASH Hauser-Feshbach statistical/preequilibrium  9237 1451     
+calculations described above. Updated Kalbach-Mann systematics    9237 1451     
+are used for specifying neutron distributions (Ka88). Only        9237 1451     
+neutron distributions are given.                                  9237 1451     
+                                                                  9237 1451     
+         ----- REFERENCES (MF=6) -----                            9237 1451     
+Ka88 C. Kalbach, "Systematics of Continuum Angular                9237 1451     
+     Distributions: Extensions to Higher Energies," Phys.Rev.C    9237 1451     
+     37, 2350 (1988); see also C. Kalbach and F. M. Mann,         9237 1451     
+     "Phenomenology of Continuum Angular Distributions. I.        9237 1451     
+     Systematics and Parameterization," Phys.Rev.C 23, 112        9237 1451     
+     (1981).                                                      9237 1451     
+                                                                  9237 1451     
+>> MF=12 PHOTON PRODUCTION MULTIPLICITIES AND TRANSITION          9237 1451     
+         PROBABILITIES                                            9237 1451     
+                                                                  9237 1451     
+MT=18,102: PHOTON MULTIPLICITIES FROM INELASTIC SCATTERING,       9237 1451     
+           FISSION, AND RADIATIVE CAPTURE                         9237 1451     
+   Taken from ENDF/B-V.2. See reference Po77.                     9237 1451     
+                                                                  9237 1451     
+>> MF=13 PHOTON PRODUCTION CROSS SECTIONS                         9237 1451     
+                                                                  9237 1451     
+MT=3: PHOTON PRODUCTION CROSS SECTIONS FROM NONELASTIC REACTIONS  9237 1451     
+   Taken from ENDF/B-V.2. See reference Po77. An exception is     9237 1451     
+that the yield for MT=18 is changed from 8.18 to 7.5326 in order  9237 1451     
+to maintain consistency with the MF=1,MT=458 data.                9237 1451     
+                                                                  9237 1451     
+>> MF=14 PHOTON ANGULAR DISTRIBUTIONS                             9237 1451     
+                                                                  9237 1451     
+MT=3,18,102: PHOTON ANGULAR DISTRIBUTIONS FROM NONELASTIC,        9237 1451     
+             FISSION, AND RADIATIVE CAPTURE REACTIONS             9237 1451     
+   Taken from ENDF/B-V.2. See reference Po77.                     9237 1451     
+                                                                  9237 1451     
+>> MF=15 CONTINUOUS PHOTON ENERGY SPECTRA                         9237 1451     
+                                                                  9237 1451     
+MT = 3,18,102: PHOTON ENERGY SPECTRA FROM NONELASTIC REACTIONS,   9237 1451     
+               FISSION AND RADIATIVE CAPTURE                      9237 1451     
+   Taken from ENDF/B-V.2. See reference Po77.                     9237 1451     
+                                                                  9237 1451     
+            ----- REFERENCES (MF=12-15) -----                     9237 1451     
+Po77 W. Poenitz, E. Pennington, A. Smith, and R. Howerton,        9237 1451     
+     "Evaluated Fast Neutron Cross Sections of Uranium-238,"      9237 1451     
+     Argonne National Laboratory report ANL-ADM-32                9237 1451     
+     (October, 1977).                                             9237 1451     
+                                                                  9237 1451     
+>> MF=33 CROSS-SECTION COVARIANCE MATRICES                        9237 1451     
+                                                                  9237 1451     
+>>> MF=33 RESONANCE PARAMETER COVARIANCE (ORNL)                   9237 1451     
+                                                                  9237 1451     
+Resonance parameter covariance was generated in the resolved      9237 1451     
+energy region (1.0-5 eV to 20.0 keV) with the computer code SAMMY 9237 1451     
+at ORNL. Experimental data and uncertainties were used to generate9237 1451     
+covariance data. SAMMY covariance information was converted in    9237 1451     
+the ENDF FILE32 representation. However, because of computer      9237 1451     
+storage concern the FILE32 was converted into the FILE33 (MT=1,   9237 1451     
+2, 18, and 102) representation with reduced computer storage but  9237 1451     
+approximating the features of the FILE32 representation. The full 9237 1451     
+FILE32 matrices can be obtained directly from ORNL. The           9237 1451     
+conversion was done with the PUFF-IV code. Above the unresolved   9237 1451     
+resonance region (> 20.0 keV) covariance data were generated at   9237 1451     
+LANL. Uncertainty on nubar was also generated at LANL.            9237 1451     
+                                                                  9237 1451     
+>>> MF=33 FAST-ENERGY COVARIANCE (LANL)                           9237 1451     
+                                                                  9237 1451     
+Cross-section covariance matrices in the fast energy region were  9237 1451     
+obtained through a combination of nuclear reaction sensitivity    9237 1451     
+calculations using the GNASH code, and available information on   9237 1451     
+experimental uncertainties for some of the cross sections. The    9237 1451     
+sensitivity of GNASH results on the choice of model parameters    9237 1451     
+was assessed, and the KALMAN code (Ka97) was used to merge        9237 1451     
+sensitivity calculations with experimental uncertainties.         9237 1451     
+                                                                  9237 1451     
+Prompt (MT456) and total (MT452) neutron multiplicity covariance  9237 1451     
+matrices were obtained from a generalized least-squares study of  9237 1451     
+experimental data alone, and no model calculation were used.      9237 1451     
+                                                                  9237 1451     
+More details on this work can be found in (Ta08).                 9237 1451     
+                                                                  9237 1451     
+        ------------- REFERENCES (MF=33) ---------------          9237 1451     
+Ka97 T.Kawano and K.Shibata, "Covariance Evaluation System"       9237 1451     
+     JAERI-Data/Code 97-037, 1997 (in Japanese).                  9237 1451     
+Ta08 P.Talou, T.Kawano and P.G.Young, "Covariance matrices for    9237 1451     
+     ENDF/B-VII 235,238U and 239Pu evaluated files in the fast    9237 1451     
+     energy range", Proc. of the ND2007 Conference, April 22-27,  9237 1451     
+     2007, Nice, France. [Los Alamos report LA-UR-07-2501].       9237 1451     
+                                                                  9237 1451     
+                                                                  9237 1451     
+>>> MF=35 PROMPT FISSION NEUTRON SPECTRUM COVARIANCE (LANL)       9237 1451     
+                                                                  9237 1451     
+MT=18: A covariance matrix was evaluated for the prompt fission   9237 1451     
+neutron spectrum (MF5,MT18) at 0.5 MeV incident neutron energy.   9237 1451     
+A combination of Madland-Nix model calculations and experimental  9237 1451     
+data (for U235) were used in a Bayesian filter to obtain the      9237 1451     
+covariance matrix. The calculated spectrum was very close to the  9237 1451     
+evaluated one, but the covariance matrix was still renormalized   9237 1451     
+to insure the required zero-sum rule.                             9237 1451     
+                                                                  9237 1451     
+ ************************ C O N T E N T S *********************** 9237 1451     
+                                1        451        864          09237 1451     
+                                1        452          7          09237 1451     
+                                1        455          7          09237 1451     
+                                1        456          7          09237 1451     
+                                1        458         11          09237 1451     
+                                2        151       3454          09237 1451     
+                                3          1      52583          09237 1451     
+                                3          2      52583          09237 1451     
+                                3          4        142          09237 1451     
+                                3         16         39          09237 1451     
+                                3         17         30          09237 1451     
+                                3         18      52583          09237 1451     
+                                3         19      52583          09237 1451     
+                                3         20         48          09237 1451     
+                                3         21         32          09237 1451     
+                                3         37         20          09237 1451     
+                                3         38         23          09237 1451     
+                                3         51        142          09237 1451     
+                                3         52        107          09237 1451     
+                                3         53        100          09237 1451     
+                                3         54         92          09237 1451     
+                                3         55         88          09237 1451     
+                                3         56         87          09237 1451     
+                                3         57         86          09237 1451     
+                                3         58         84          09237 1451     
+                                3         59         83          09237 1451     
+                                3         60         82          09237 1451     
+                                3         61         80          09237 1451     
+                                3         62         79          09237 1451     
+                                3         63         78          09237 1451     
+                                3         64         78          09237 1451     
+                                3         65         77          09237 1451     
+                                3         66         75          09237 1451     
+                                3         67         74          09237 1451     
+                                3         68         74          09237 1451     
+                                3         69         73          09237 1451     
+                                3         70         72          09237 1451     
+                                3         71         71          09237 1451     
+                                3         72         68          09237 1451     
+                                3         73         66          09237 1451     
+                                3         74         64          09237 1451     
+                                3         75         61          09237 1451     
+                                3         76         60          09237 1451     
+                                3         77         59          09237 1451     
+                                3         78         58          09237 1451     
+                                3         79         56          09237 1451     
+                                3         80         55          09237 1451     
+                                3         81         54          09237 1451     
+                                3         82         53          09237 1451     
+                                3         83         50          09237 1451     
+                                3         84         49          09237 1451     
+                                3         85         48          09237 1451     
+                                3         86         47          09237 1451     
+                                3         87         46          09237 1451     
+                                3         88         45          09237 1451     
+                                3         89         44          09237 1451     
+                                3         90         44          09237 1451     
+                                3         91         70          09237 1451     
+                                3        102      52583          09237 1451     
+                                4          2        162          09237 1451     
+                                4         18          2          09237 1451     
+                                4         51        169          09237 1451     
+                                4         52        165          09237 1451     
+                                4         53        161          09237 1451     
+                                4         54        104          09237 1451     
+                                4         55         99          09237 1451     
+                                4         56         97          09237 1451     
+                                4         57        100          09237 1451     
+                                4         58         95          09237 1451     
+                                4         59         95          09237 1451     
+                                4         60         93          09237 1451     
+                                4         61         91          09237 1451     
+                                4         62         93          09237 1451     
+                                4         63         91          09237 1451     
+                                4         64         91          09237 1451     
+                                4         65         91          09237 1451     
+                                4         66         91          09237 1451     
+                                4         67         91          09237 1451     
+                                4         68         91          09237 1451     
+                                4         69         91          09237 1451     
+                                4         70         92          09237 1451     
+                                4         71         89          09237 1451     
+                                4         72         97          09237 1451     
+                                4         73         97          09237 1451     
+                                4         74         94          09237 1451     
+                                4         75         94          09237 1451     
+                                4         76         93          09237 1451     
+                                4         77         93          09237 1451     
+                                4         78         90          09237 1451     
+                                4         79         89          09237 1451     
+                                4         80         89          09237 1451     
+                                4         81         85          09237 1451     
+                                4         82         85          09237 1451     
+                                4         83         81          09237 1451     
+                                4         84         80          09237 1451     
+                                4         85         77          09237 1451     
+                                4         86         77          09237 1451     
+                                4         87         77          09237 1451     
+                                4         88         77          09237 1451     
+                                4         89         77          09237 1451     
+                                4         90         74          09237 1451     
+                                5         18       5431          09237 1451     
+                                5        455        589          09237 1451     
+                                6         16       1522          09237 1451     
+                                6         17        743          09237 1451     
+                                6         37        284          09237 1451     
+                                6         91       3515          09237 1451     
+                               12         18          4          09237 1451     
+                               12        102          4          09237 1451     
+                               13          3         40          09237 1451     
+                               14          3          1          09237 1451     
+                               14         18          1          09237 1451     
+                               14        102          1          09237 1451     
+                               15          3        299          09237 1451     
+                               15         18         32          09237 1451     
+                               15        102         70          09237 1451     
+                               31        452          7          09237 1451     
+                               31        456          7          09237 1451     
+                               33          1     167170          09237 1451     
+                               33          2     119140          09237 1451     
+                               33          4        418          09237 1451     
+                               33         16        140          09237 1451     
+                               33         17         81          09237 1451     
+                               33         18      71781          09237 1451     
+                               33        102      27660          09237 1451     
+                               35         18       6606          09237 1451     
