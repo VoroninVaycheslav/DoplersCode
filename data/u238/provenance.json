@@ -1,0 +1,32 @@
+{
+  "library": "ENDF/B-VII.1",
+  "isotope": "U-238",
+  "ZA": 92238,
+  "MAT": 9237,
+  "AWR": 236.0058,
+  "source_url": "https://raw.githubusercontent.com/njoy/ENDFtk/6596073f17b21952407f6f16b5b812ca3b4a8d67/python/examples/resources/n-U238.endf",
+  "source_commit": "6596073f17b21952407f6f16b5b812ca3b4a8d67",
+  "source_sha256": "8a6b57822367f11b837d1d8d7396220e9432f8644a6beac18e45420395e1265e",
+  "supported_incident_energy_eV": [
+    150000,
+    19000000
+  ],
+  "sections": {
+    "total.endf": "MF=3 MT=1: total cross section",
+    "elastic.endf": "MF=3 MT=2: angle-integrated elastic cross section",
+    "angular.endf": "MF=4 MT=2: normalized CM angular Legendre coefficients",
+    "evaluation_header.endf": "MF=1 MT=451: evaluation documentation"
+  },
+  "units": {
+    "energy": "eV",
+    "cross_section": "barn",
+    "angular_pdf": "per unit CM cosine"
+  },
+  "extraction": "Exact section lines, including original line endings; no interpolation or resampling.",
+  "section_sha256": {
+    "angular.endf": "37ac6fe01d549fea56088480026f2b0377b19f1cd01c297325abc06fa289c989",
+    "elastic.endf": "120b6b8ff9d0dbf31515cae8211e3d2bd74c00bbeefde2ae2953f389ae44cc63",
+    "evaluation_header.endf": "08876a1b5fe2f31c22e795a52e00100c25d9c9395b4802178527a47bc181087c",
+    "total.endf": "ca340a917920c02a4da8880af3f8ff63d460d90f009373fea5d37a144e02a09c"
+  }
+}
